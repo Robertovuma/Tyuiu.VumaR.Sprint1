@@ -31,12 +31,12 @@ namespace Tyuiu.VumaR.Sprint1.Task5.V5
             Console.WriteLine("***********************************************************************");
 
             Console.WriteLine("* Введите день невисокосного года:                                        *");
-            int k = int.Parse(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("На " + k + "-й день невисокосного года приходится " + ds.Calculate(k) + "-й день недели");
+            Console.WriteLine("На " + x + "-й день невисокосного года приходится " + ds.Calculate(x) + "-й день недели");
             Console.WriteLine("***************************************************************************");
 
 

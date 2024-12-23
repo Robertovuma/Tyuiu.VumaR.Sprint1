@@ -8,8 +8,19 @@ namespace Tyuiu.VumaR.Sprint1.Task5.V5.Lib
     {
         public int Calculate(double x)
         {
-           double n = (x - 1) % 7 + 1;
-            return (int)n;
+            double fractionalPart = Math.Abs(x) - Math.Truncate(Math.Abs(x));
+
+            
+            if (fractionalPart == 0)
+            {
+                return 0;
+            }
+
+            
+            fractionalPart *= 10;
+
+            
+            return (int)Math.Truncate(fractionalPart);
         }
     }
 }
