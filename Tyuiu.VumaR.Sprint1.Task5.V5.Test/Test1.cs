@@ -10,8 +10,8 @@ namespace Tyuiu.VumaR.Sprint1.Task5.V5.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int k = 12;
-            int n = ds.Calculate(k);
+            int x = 12;
+            int n = ds.Calculate(x);
             int res = Convert.ToInt32(n);
             int wait = 5;
             Assert.AreEqual(wait, res);
